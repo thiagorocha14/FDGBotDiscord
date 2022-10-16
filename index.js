@@ -15,7 +15,7 @@ const client = new Client({
 const dotenv = require("dotenv");
 dotenv.config();
 
-const TOKEN = process.env.TOKEN;
+const TOKEN = process.env.TOKEN_DISCORD;
 const PREFIX = "!";
 
 const player = createAudioPlayer();
