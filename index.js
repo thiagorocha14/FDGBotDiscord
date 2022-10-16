@@ -12,9 +12,10 @@ const client = new Client({
         Intents.FLAGS.GUILD_VOICE_STATES
     ]
 });
+const dotenv = require("dotenv");
+dotenv.config();
 
-const TOKEN =
-    "OTM3ODMyODM0MDU4NTc1OTQy.GaMNr9._xyZsDx3YXI6J3qw0naITgVTsC3fE0-bgiKpoc";
+const TOKEN = process.env.TOKEN;
 const PREFIX = "!";
 
 const player = createAudioPlayer();
