@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  bot:
+    container_name: bot-discord
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
